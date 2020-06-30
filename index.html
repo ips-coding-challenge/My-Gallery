@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <main>
+      <!-- User Section -->
+      <section class="user">
+        <img
+          class="avatar"
+          src="./assets/img/profilePhoto.png"
+          alt="Profile photo"
+        />
+        <div class="user__name">Rodney Cotton</div>
+        <div class="user__location">Helsinki, Finland</div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats" x-data="data()">
+        <template x-for="stat in stats">
+          <div class="stat-item">
+            <div class="stat-item__value" x-text="stat.value"></div>
+            <div class="stat-item__type" x-text="stat.type"></div>
+          </div>
+        </template>
+      </section>
+
+      <!-- Gallery Section -->
+
+      <div class="container">
+        <section class="gallery">
+          <img src="./assets/img/photo1.png" alt="Photo 1" />
+          <img src="./assets/img/photo2.png" alt="Photo 2" />
+          <img src="./assets/img/photo3.png" alt="Photo 3" />
+          <img src="./assets/img/photo4.png" alt="Photo 4" />
+          <img src="./assets/img/photo5.png" alt="Photo 5" />
+          <img src="./assets/img/photo6.png" alt="Photo 6" />
+        </section>
+      </div>
+
+      <!-- Footer Section -->
+      <footer>TutoCode @ DevChallenges.io</footer>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+
+    <!-- Data Alpinejs -->
+    <script>
+      function data() {
+        return {
+          stats: [
+            { type: "posts", value: 100 },
+            { type: "followers", value: 2242 },
+            { type: "following", value: 1432 },
+          ],
+        };
+      }
+    </script>
+  </body>
+</html>
