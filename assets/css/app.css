@@ -19,6 +19,13 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
 }
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 /* USER */
 .user {
   display: flex;
@@ -61,6 +68,7 @@ html {
   background-color: var(--clr-bg-gray);
   border-radius: var(--bradius);
   padding: 0.8rem 1rem;
+  margin: 0 6px;
 }
 .stat-item__type,
 .stat-item__value {
@@ -141,7 +149,7 @@ footer {
 
   .container {
     margin-top: 64px !important;
-    max-width: 70%;
+    max-width: 930px;
     margin: 0 auto;
   }
 
@@ -153,6 +161,7 @@ footer {
 
   footer {
     margin-top: 64px;
-    font-size: 1.5rem;
+    font-size: 14px;
+    line-height: 17px;
   }
 }
