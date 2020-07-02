@@ -10,7 +10,5 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   },
-  "dependencies": {
-    "alpinejs": "^2.4.1"
-  }
+  "dependencies": {}
 }

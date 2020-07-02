@@ -20,13 +20,19 @@
       </section>
 
       <!-- Stats Section -->
-      <section class="stats" x-data="data()">
-        <template x-for="stat in stats">
-          <div class="stat-item">
-            <div class="stat-item__value" x-text="stat.value"></div>
-            <div class="stat-item__type" x-text="stat.type"></div>
-          </div>
-        </template>
+      <section class="stats">
+        <div class="stat-item">
+          <div class="stat-item__value">100</div>
+          <div class="stat-item__type">posts</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__value">2242</div>
+          <div class="stat-item__type">followers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__value">1432</div>
+          <div class="stat-item__type">following</div>
+        </div>
       </section>
 
       <!-- Gallery Section -->
@@ -47,18 +53,5 @@
     </main>
 
     <script type="module" src="./assets/js/app.js"></script>
-
-    <!-- Data Alpinejs -->
-    <script>
-      function data() {
-        return {
-          stats: [
-            { type: "posts", value: 100 },
-            { type: "followers", value: 2242 },
-            { type: "following", value: 1432 },
-          ],
-        };
-      }
-    </script>
   </body>
 </html>
